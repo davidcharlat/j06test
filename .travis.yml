@@ -1,6 +1,6 @@
 language: c
 install:
-  - git clone $J05
+  - git clone $J06
 script:
 - bash ./test.sh
 
