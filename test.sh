@@ -6,9 +6,14 @@ do
 	if [ -f j06/ex0$n/$file.c ]
 	then 
 		gcc -o test$n ft_putchar.c j06/ex0$n/$file.c
+		echo "testing ./test$n"
 		./test$n
+		echo "testing ./test$n abc abcd aabv"
+		./test$n abc abcd aabv
+		echo "$file.c is compiling"	
+		echo "____________________"
+		echo " "
 		nf=$(find j06/ex0$n -type f ! -regex '.*/\..*' -printf "0"|wc -c)
-        echo "$file.c is compiling"	
 		let "n = n + 1"
 		if [ $nf -ne 1 ]
 		then
