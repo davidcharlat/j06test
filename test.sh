@@ -8,8 +8,8 @@ do
 		gcc -o test$n ft_putchar.c j06/ex0$n/$file.c
 		echo "testing ./test$n"
 		./test$n
-		echo "testing ./test$n abc abcd aabv"
-		./test$n abc abcd aabv
+		echo "testing ./test$n abc abcd aabv abcd"
+		./test$n abc abcd aabv abcd
 		echo "$file.c is compiling"	
 		echo "____________________"
 		echo " "
